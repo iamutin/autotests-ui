@@ -20,6 +20,7 @@ class RegistrationPage(BasePage):
         expect(self.password_input).to_have_value(password)
 
         self.username_input.fill(username)
+        expect(self.username_input).to_have_value(username)
 
     def click_registration_button(self) -> None:
         self.registration_button.click()
