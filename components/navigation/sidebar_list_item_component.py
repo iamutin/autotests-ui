@@ -11,8 +11,16 @@ class SidebarListItemComponent(BaseComponent):
         super().__init__(page)
 
         self.icon = Icon(page, f'{identifier}-drawer-list-item-icon', 'Icon')
-        self.title = Text(page, f'{identifier}-drawer-list-item-title-text', 'List item title')
-        self.button = Button(page, f'{identifier}-drawer-list-item-button', 'List item button')
+        self.title = Text(
+            page,
+            f'{identifier}-drawer-list-item-title-text',
+            'List item title'
+        )
+        self.button = Button(
+            page,
+            f'{identifier}-drawer-list-item-button',
+            'List item button'
+        )
 
     def check_visible(self, title: str) -> None:
         self.icon.check_visible()

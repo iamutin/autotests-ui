@@ -8,8 +8,12 @@ class NavbarComponent(BaseComponent):
     def __init__(self, page: Page) -> None:
         super().__init__(page)
 
-        self.app_title = Text(page, 'navigation-navbar-app-title-text', 'Navbar title')
-        self.welcome_title = Text(page, 'navigation-navbar-welcome-title-text', 'Welcome text')
+        self.app_title = Text(page, 'navigation-navbar-app-title-text', 'App title')
+        self.welcome_title = Text(
+            page,
+            'navigation-navbar-welcome-title-text',
+            'Welcome title'
+        )
 
     def check_visible(self, username: str) -> None:
         self.app_title.check_visible()

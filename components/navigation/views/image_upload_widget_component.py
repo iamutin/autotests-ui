@@ -14,7 +14,7 @@ class ImageUploadWidgetComponent(BaseComponent):
         self.preview_image = Image(
             page,
             f'{identifier}-image-upload-widget-preview-image',
-            'Image preview'
+            'Preview'
         )
 
         self.image_upload_info_icon = Icon(
@@ -25,28 +25,28 @@ class ImageUploadWidgetComponent(BaseComponent):
         self.image_upload_info_title = Text(
             page,
             f'{identifier}-image-upload-widget-info-title-text',
-            'Image upload title text'
+            'Image upload info title'
         )
         self.image_upload_info_description = Text(
             page,
             f'{identifier}-image-upload-widget-info-description-text',
-            'Image upload description'
+            'Image upload info description'
         )
 
         self.upload_button = Button(
             page,
             f'{identifier}-image-upload-widget-upload-button',
-            'Image upload'
+            'Upload image'
         )
         self.remove_button = Button(
             page,
             f'{identifier}-image-upload-widget-remove-button',
-            'Image remove'
+            'Remove image'
         )
         self.upload_input = FileInput(
             page,
             f'{identifier}-image-upload-widget-input',
-            'File input'
+            'Upload'
         )
 
     # Проверяет отображение виджета в зависимости от наличия загруженного изображения
