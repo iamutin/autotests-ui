@@ -16,7 +16,7 @@ class CreateCourseToolbarViewComponent(BaseComponent):
         self.create_course_button = Button(
             page,
             'create-course-toolbar-create-course-button',
-            'Button'
+            'Create course'
         )
 
     def click_create_course_button(self) -> None:
