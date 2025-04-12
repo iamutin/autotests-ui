@@ -27,8 +27,8 @@ class SidebarComponent(BaseComponent):
 
     @allure.step("Click courses on sidebar")
     def click_courses(self):
-        self.courses_list_item.navigate(re.compile(f".*/#/courses"))
+        self.courses_list_item.navigate(re.compile(r".*/#/courses"))
 
     @allure.step("Click dashboard on sidebar")
     def click_dashboard(self):
-        self.dashboard_list_item.navigate(re.compile(f".*/#/dashboard"))
+        self.dashboard_list_item.navigate(re.compile(r".*/#/dashboard"))

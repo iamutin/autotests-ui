@@ -2,8 +2,10 @@ import allure
 import pytest
 from allure_commons.types import Severity
 
+from config import settings
 from pages import DashboardPage, RegistrationPage
 from tools.allure import AllureTag, AllureEpic, AllureFeature, AllureStory
+from tools.routes import AppRoute
 
 
 @pytest.mark.regression
@@ -22,20 +24,10 @@ class TestRegistration:
         registration_page: RegistrationPage,
         dashboard_page: DashboardPage,
     ):
-        registration_page.visit(
-            "https://nikita-filonov.github.io/qa-automation-engineer-ui-course/#/auth/registration"
-        )
+        registration_page.visit(AppRoute.REGISTRATION)
 
-        registration_page.registration_form.fill(
-            email= 'user.name@gmail.com',
-            username='username',
-            password='password',
-        )
-        registration_page.registration_form.check_visible(
-            email='user.name@gmail.com',
-            username='username',
-            password='password',
-        )
+        registration_page.registration_form.fill(**dict(settings.test_user))
+        registration_page.registration_form.check_visible(**dict(settings.test_user))
         registration_page.click_registration_button()
 
         dashboard_page.dashboard_toolbar.check_visible()
