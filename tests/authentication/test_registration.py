@@ -18,6 +18,7 @@ from tools.routes import AppRoute
 @allure.suite(AllureFeature.AUTHENTICATION)
 @allure.sub_suite(AllureStory.REGISTRATION)
 class TestRegistration:
+    @pytest.mark.xdist_group(name="authorization-group")
     @allure.title('Registration with correct email, username and password')
     @allure.severity(Severity.CRITICAL)
     def test_successful_registration(self,
@@ -26,8 +27,8 @@ class TestRegistration:
     ):
         registration_page.visit(AppRoute.REGISTRATION)
 
-        registration_page.registration_form.fill(**dict(settings.test_user))
-        registration_page.registration_form.check_visible(**dict(settings.test_user))
+        registration_page.registration_form.fill(**settings.test_user.model_dump())
+        registration_page.registration_form.check_visible(**settings.test_user.model_dump())
         registration_page.click_registration_button()
 
         dashboard_page.dashboard_toolbar.check_visible()

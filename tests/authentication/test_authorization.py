@@ -19,6 +19,7 @@ from tools.routes import AppRoute
 @allure.suite(AllureFeature.AUTHENTICATION)
 @allure.sub_suite(AllureStory.AUTHORIZATION)
 class TestAuthorization:
+    @pytest.mark.xdist_group(name="authorization-group")
     @pytest.mark.parametrize(
         "email, password",
         [
@@ -47,7 +48,7 @@ class TestAuthorization:
         registration_page: RegistrationPage
     ):
         registration_page.visit(AppRoute.REGISTRATION)
-        registration_page.registration_form.fill(**dict(settings.test_user))
+        registration_page.registration_form.fill(**settings.test_user.model_dump())
         registration_page.click_registration_button()
 
         dashboard_page.dashboard_toolbar.check_visible()

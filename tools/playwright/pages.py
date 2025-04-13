@@ -3,7 +3,7 @@ from pathlib import Path
 import allure
 from playwright.sync_api import Playwright, Page
 
-from config import settings
+from config import settings, Browser
 
 TRACING_DIR = Path(settings.tracing_dir)
 
@@ -11,9 +11,10 @@ TRACING_DIR = Path(settings.tracing_dir)
 def initialize_playwright_page(
         playwright: Playwright,
         test_name: str,
+        browser_type: Browser,
         storage_state: str | None = None
 ) -> Page:
-    browser = playwright.chromium.launch(headless=settings.headless)
+    browser = playwright[browser_type].launch(headless=settings.headless)
     context = browser.new_context(
         base_url=settings.get_base_url,
         storage_state=storage_state,
