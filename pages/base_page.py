@@ -13,13 +13,13 @@ class BasePage:
         self.page = page
 
     def visit(self, url: str) -> None:
-        step = f'Opening the url {url!r}'
+        step = f'Opening the url "{url}"'
         with allure.step(step):
             logger.info(step)
             self.page.goto(url, wait_until='networkidle')
 
     def reload(self):
-        step = f'Reloading page with url {self.page.url!r}'
+        step = f'Reloading page with url "{self.page.url}"'
         with allure.step(step):
             logger.info(step)
             self.page.reload(wait_until='domcontentloaded')

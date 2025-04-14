@@ -1,10 +1,10 @@
-from enum import Enum
+from enum import StrEnum
 
 from pydantic import EmailStr, FilePath, HttpUrl, DirectoryPath, BaseModel
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
-class Browser(str, Enum):
+class Browser(StrEnum):
     WEBKIT = "webkit"
     FIREFOX = "firefox"
     CHROMIUM = "chromium"
@@ -34,6 +34,7 @@ class Settings(BaseSettings):
     test_data: TestData
     videos_dir: DirectoryPath | None = None
     tracing_dir: DirectoryPath | None = None
+    allure_results_dir: DirectoryPath| None = None
     browser_state_file: FilePath | None = None
 
     def __init__(self, **kwargs) -> None:
@@ -41,10 +42,12 @@ class Settings(BaseSettings):
 
         self.videos_dir = DirectoryPath("./videos")
         self.tracing_dir = DirectoryPath("./tracing")
+        self.allure_results_dir = DirectoryPath("./allure-results")
         self.browser_state_file = FilePath("browser-state.json")
 
         self.videos_dir.mkdir(exist_ok=True)
         self.tracing_dir.mkdir(exist_ok=True)
+        self.allure_results_dir.mkdir(exist_ok=True)
         self.browser_state_file.touch(exist_ok=True)
 
     @property
