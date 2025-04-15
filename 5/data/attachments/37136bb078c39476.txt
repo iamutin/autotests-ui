@@ -1,0 +1,19 @@
+INFO     pages.base_page:base_page.py:18 Opening the url "./#/auth/login"
+INFO     elements.input:input.py:22 Fill input 'Email' to value 'user.name@gmail.com'
+INFO     elements.base_element:base_element.py:23 Getting locator with "data-testid=login-form-email-input" at index 0
+INFO     elements.input:input.py:22 Fill input 'Password' to value '  '
+INFO     elements.base_element:base_element.py:23 Getting locator with "data-testid=login-form-password-input" at index 0
+INFO     elements.base_element:base_element.py:36 Checking that input 'Email' is visible
+INFO     elements.base_element:base_element.py:23 Getting locator with "data-testid=login-form-email-input" at index 0
+INFO     elements.input:input.py:29 Checking that input 'Email' has a value 'user.name@gmail.com'
+INFO     elements.base_element:base_element.py:23 Getting locator with "data-testid=login-form-email-input" at index 0
+INFO     elements.base_element:base_element.py:36 Checking that input 'Password' is visible
+INFO     elements.base_element:base_element.py:23 Getting locator with "data-testid=login-form-password-input" at index 0
+INFO     elements.input:input.py:29 Checking that input 'Password' has a value '  '
+INFO     elements.base_element:base_element.py:23 Getting locator with "data-testid=login-form-password-input" at index 0
+INFO     elements.base_element:base_element.py:29 Clicking button 'Login'
+INFO     elements.base_element:base_element.py:23 Getting locator with "data-testid=login-page-login-button" at index 0
+INFO     elements.base_element:base_element.py:36 Checking that text 'Wrong email or password' is visible
+INFO     elements.base_element:base_element.py:23 Getting locator with "data-testid=login-page-wrong-email-or-password-alert" at index 0
+INFO     elements.base_element:base_element.py:43 Checking that text 'Wrong email or password' has text 'Wrong email or password'
+INFO     elements.base_element:base_element.py:23 Getting locator with "data-testid=login-page-wrong-email-or-password-alert" at index 0
