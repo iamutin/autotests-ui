@@ -179,3 +179,9 @@ allure-report
 # testing artifacts
 videos
 tracing
+
+# coverage
+coverage.html
+coverage-results
+coverage-report.json
+coverage-history.json
