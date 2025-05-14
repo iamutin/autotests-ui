@@ -1,0 +1,90 @@
+INFO     pages.base_page:base_page.py:18 Opening the url "./#/auth/registration"
+INFO     elements.input:input.py:30 Fill input 'Email' to value 'user.name@gmail.com'
+INFO     elements.base_element:base_element.py:26 Getting locator with "data-testid=registration-form-email-input" at index 0
+INFO     elements.input:input.py:30 Fill input 'Password' to value 'password'
+INFO     elements.base_element:base_element.py:26 Getting locator with "data-testid=registration-form-password-input" at index 0
+INFO     elements.input:input.py:30 Fill input 'Username' to value 'username'
+INFO     elements.base_element:base_element.py:26 Getting locator with "data-testid=registration-form-username-input" at index 0
+INFO     elements.base_element:base_element.py:50 Clicking button 'Registration'
+INFO     elements.base_element:base_element.py:26 Getting locator with "data-testid=registration-page-registration-button" at index 0
+INFO     elements.base_element:base_element.py:60 Checking that text 'Dashboard title' is visible
+INFO     elements.base_element:base_element.py:26 Getting locator with "data-testid=dashboard-toolbar-title-text" at index 0
+INFO     elements.base_element:base_element.py:70 Checking that text 'Dashboard title' has text 'Dashboard'
+INFO     elements.base_element:base_element.py:26 Getting locator with "data-testid=dashboard-toolbar-title-text" at index 0
+INFO     elements.base_element:base_element.py:60 Checking that text 'App title' is visible
+INFO     elements.base_element:base_element.py:26 Getting locator with "data-testid=navigation-navbar-app-title-text" at index 0
+INFO     elements.base_element:base_element.py:70 Checking that text 'App title' has text 'UI Course'
+INFO     elements.base_element:base_element.py:26 Getting locator with "data-testid=navigation-navbar-app-title-text" at index 0
+INFO     elements.base_element:base_element.py:60 Checking that text 'Welcome title' is visible
+INFO     elements.base_element:base_element.py:26 Getting locator with "data-testid=navigation-navbar-welcome-title-text" at index 0
+INFO     elements.base_element:base_element.py:70 Checking that text 'Welcome title' has text 'Welcome, username!'
+INFO     elements.base_element:base_element.py:26 Getting locator with "data-testid=navigation-navbar-welcome-title-text" at index 0
+INFO     elements.base_element:base_element.py:60 Checking that icon 'Icon' is visible
+INFO     elements.base_element:base_element.py:26 Getting locator with "data-testid=logout-drawer-list-item-icon" at index 0
+INFO     elements.base_element:base_element.py:60 Checking that text 'List item title' is visible
+INFO     elements.base_element:base_element.py:26 Getting locator with "data-testid=logout-drawer-list-item-title-text" at index 0
+INFO     elements.base_element:base_element.py:70 Checking that text 'List item title' has text 'Logout'
+INFO     elements.base_element:base_element.py:26 Getting locator with "data-testid=logout-drawer-list-item-title-text" at index 0
+INFO     elements.base_element:base_element.py:60 Checking that button 'List item button' is visible
+INFO     elements.base_element:base_element.py:26 Getting locator with "data-testid=logout-drawer-list-item-button" at index 0
+INFO     elements.base_element:base_element.py:60 Checking that icon 'Icon' is visible
+INFO     elements.base_element:base_element.py:26 Getting locator with "data-testid=courses-drawer-list-item-icon" at index 0
+INFO     elements.base_element:base_element.py:60 Checking that text 'List item title' is visible
+INFO     elements.base_element:base_element.py:26 Getting locator with "data-testid=courses-drawer-list-item-title-text" at index 0
+INFO     elements.base_element:base_element.py:70 Checking that text 'List item title' has text 'Courses'
+INFO     elements.base_element:base_element.py:26 Getting locator with "data-testid=courses-drawer-list-item-title-text" at index 0
+INFO     elements.base_element:base_element.py:60 Checking that button 'List item button' is visible
+INFO     elements.base_element:base_element.py:26 Getting locator with "data-testid=courses-drawer-list-item-button" at index 0
+INFO     elements.base_element:base_element.py:60 Checking that icon 'Icon' is visible
+INFO     elements.base_element:base_element.py:26 Getting locator with "data-testid=dashboard-drawer-list-item-icon" at index 0
+INFO     elements.base_element:base_element.py:60 Checking that text 'List item title' is visible
+INFO     elements.base_element:base_element.py:26 Getting locator with "data-testid=dashboard-drawer-list-item-title-text" at index 0
+INFO     elements.base_element:base_element.py:70 Checking that text 'List item title' has text 'Dashboard'
+INFO     elements.base_element:base_element.py:26 Getting locator with "data-testid=dashboard-drawer-list-item-title-text" at index 0
+INFO     elements.base_element:base_element.py:60 Checking that button 'List item button' is visible
+INFO     elements.base_element:base_element.py:26 Getting locator with "data-testid=dashboard-drawer-list-item-button" at index 0
+INFO     elements.base_element:base_element.py:50 Clicking button 'List item button'
+INFO     elements.base_element:base_element.py:26 Getting locator with "data-testid=logout-drawer-list-item-button" at index 0
+INFO     components.base_component:base_component.py:15 Checking that current url matches pattern '.*/#/auth/login'
+INFO     elements.input:input.py:30 Fill input 'Email' to value 'user.name@gmail.com'
+INFO     elements.base_element:base_element.py:26 Getting locator with "data-testid=login-form-email-input" at index 0
+INFO     elements.input:input.py:30 Fill input 'Password' to value 'password'
+INFO     elements.base_element:base_element.py:26 Getting locator with "data-testid=login-form-password-input" at index 0
+INFO     elements.base_element:base_element.py:50 Clicking button 'Login'
+INFO     elements.base_element:base_element.py:26 Getting locator with "data-testid=login-page-login-button" at index 0
+INFO     elements.base_element:base_element.py:60 Checking that text 'Dashboard title' is visible
+INFO     elements.base_element:base_element.py:26 Getting locator with "data-testid=dashboard-toolbar-title-text" at index 0
+INFO     elements.base_element:base_element.py:70 Checking that text 'Dashboard title' has text 'Dashboard'
+INFO     elements.base_element:base_element.py:26 Getting locator with "data-testid=dashboard-toolbar-title-text" at index 0
+INFO     elements.base_element:base_element.py:60 Checking that text 'App title' is visible
+INFO     elements.base_element:base_element.py:26 Getting locator with "data-testid=navigation-navbar-app-title-text" at index 0
+INFO     elements.base_element:base_element.py:70 Checking that text 'App title' has text 'UI Course'
+INFO     elements.base_element:base_element.py:26 Getting locator with "data-testid=navigation-navbar-app-title-text" at index 0
+INFO     elements.base_element:base_element.py:60 Checking that text 'Welcome title' is visible
+INFO     elements.base_element:base_element.py:26 Getting locator with "data-testid=navigation-navbar-welcome-title-text" at index 0
+INFO     elements.base_element:base_element.py:70 Checking that text 'Welcome title' has text 'Welcome, username!'
+INFO     elements.base_element:base_element.py:26 Getting locator with "data-testid=navigation-navbar-welcome-title-text" at index 0
+INFO     elements.base_element:base_element.py:60 Checking that icon 'Icon' is visible
+INFO     elements.base_element:base_element.py:26 Getting locator with "data-testid=logout-drawer-list-item-icon" at index 0
+INFO     elements.base_element:base_element.py:60 Checking that text 'List item title' is visible
+INFO     elements.base_element:base_element.py:26 Getting locator with "data-testid=logout-drawer-list-item-title-text" at index 0
+INFO     elements.base_element:base_element.py:70 Checking that text 'List item title' has text 'Logout'
+INFO     elements.base_element:base_element.py:26 Getting locator with "data-testid=logout-drawer-list-item-title-text" at index 0
+INFO     elements.base_element:base_element.py:60 Checking that button 'List item button' is visible
+INFO     elements.base_element:base_element.py:26 Getting locator with "data-testid=logout-drawer-list-item-button" at index 0
+INFO     elements.base_element:base_element.py:60 Checking that icon 'Icon' is visible
+INFO     elements.base_element:base_element.py:26 Getting locator with "data-testid=courses-drawer-list-item-icon" at index 0
+INFO     elements.base_element:base_element.py:60 Checking that text 'List item title' is visible
+INFO     elements.base_element:base_element.py:26 Getting locator with "data-testid=courses-drawer-list-item-title-text" at index 0
+INFO     elements.base_element:base_element.py:70 Checking that text 'List item title' has text 'Courses'
+INFO     elements.base_element:base_element.py:26 Getting locator with "data-testid=courses-drawer-list-item-title-text" at index 0
+INFO     elements.base_element:base_element.py:60 Checking that button 'List item button' is visible
+INFO     elements.base_element:base_element.py:26 Getting locator with "data-testid=courses-drawer-list-item-button" at index 0
+INFO     elements.base_element:base_element.py:60 Checking that icon 'Icon' is visible
+INFO     elements.base_element:base_element.py:26 Getting locator with "data-testid=dashboard-drawer-list-item-icon" at index 0
+INFO     elements.base_element:base_element.py:60 Checking that text 'List item title' is visible
+INFO     elements.base_element:base_element.py:26 Getting locator with "data-testid=dashboard-drawer-list-item-title-text" at index 0
+INFO     elements.base_element:base_element.py:70 Checking that text 'List item title' has text 'Dashboard'
+INFO     elements.base_element:base_element.py:26 Getting locator with "data-testid=dashboard-drawer-list-item-title-text" at index 0
+INFO     elements.base_element:base_element.py:60 Checking that button 'List item button' is visible
+INFO     elements.base_element:base_element.py:26 Getting locator with "data-testid=dashboard-drawer-list-item-button" at index 0
